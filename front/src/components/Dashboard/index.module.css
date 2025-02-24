@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #FFCE04;
+  --white-color: #FFFFFF;
+  --background-color: #000000;
+  --secondary-background: #240E0B;
+  --border-color: #615A5A;
+  --font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  color: var(--white-color);
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  padding: 20px;
+  margin: 20px;
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255, 206, 4, 0.3);
+  text-align: center;
+  position: relative;
+}
+
+h1,
+h2 {
+  color: var(--secondary-background);
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.6em;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.metrics,
+.history,
+.motivation {
+  background-color: var(--white-color);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: var(--secondary-background);
+}
+
+.metrics p,
+.history ul,
+.motivation p {
+  font-size: 1.1em;
+}
+
+.history ul {
+  padding-left: 20px;
+}
+
+.history li {
+  border-bottom: 1px dashed var(--border-color);
+  padding: 5px 0;
+}
+
+.admin {
+  padding: 10px 20px;
+  background-color: var(--secondary-background);
+  color: var(--white-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.admin:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  transition: background-color 0.3s ease;
+}
